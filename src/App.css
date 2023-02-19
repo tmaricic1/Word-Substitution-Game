@@ -16,4 +16,40 @@
 }
 
 .sentence-box {
+  background-color: lightgray;
+  color: black;
+  border-radius: 10px;
+}
+
+.answers-box {
+  background-color: lightgrey;
+  color: black;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.answer:hover {
+  cursor: pointer;
+  background-color: white;
+}
+.answer {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border: 1px solid black;
+}
+.answerA:hover {
+  border-radius: 0px 0px 0px 10px;
+}
+.answerB:hover {
+  border-radius: 0px 0px 10px 0px;
+}
+.question-wrapper {
+  background-color: lightgrey;
+  border-radius: 10px;
+  padding-top: 1rem;
+}
+.question-list {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 2rem;
 }
