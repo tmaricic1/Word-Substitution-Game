@@ -4,23 +4,19 @@
   /* padding: 2rem; */
   text-align: center;
 }
-
 .card {
   /* padding: 2em; */
   font-size: 2rem;
 }
-
 .Title {
   font-size: 6rem;
   margin-bottom: 1rem;
 }
-
 .sentence-box {
   background-color: lightgray;
   color: black;
   border-radius: 10px;
 }
-
 .answers-box {
   background-color: lightgrey;
   color: black;
@@ -35,21 +31,32 @@
 .answer {
   padding-bottom: 1rem;
   padding-top: 1rem;
-  border: 1px solid black;
-}
-.answerA:hover {
-  border-radius: 0px 0px 0px 10px;
-}
-.answerB:hover {
-  border-radius: 0px 0px 10px 0px;
+  border-top: 1px solid black;
 }
 .question-wrapper {
   background-color: lightgrey;
   border-radius: 10px;
   padding-top: 1rem;
+  overflow: hidden;
 }
 .question-list {
   display: grid;
   grid-template-rows: auto;
   row-gap: 2rem;
+}
+.correct,
+.correct:hover {
+  background-color: green;
+  color: white;
+}
+.incorrect,
+.incorrect:hover {
+  background-color: red;
+  color: white;
+}
+.clicked {
+  pointer-events: none;
+}
+.answerA {
+  border-right: 1px solid black;
 }

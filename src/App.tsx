@@ -1,10 +1,9 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
+import QuestionWrapper from "./components/QuestionWrapper";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
       <h1 className="Title">Word Substitution Game</h1>
@@ -14,33 +13,31 @@ function App() {
         </p>
       </div>
       <div className="question-list">
-        <div className="question-wrapper">
-          <div className="sentence-box">
-            <p>The United Kingdom ____ more books than any other country.</p>
-          </div>
-          <div className="answers-box">
-            <div className="answer answerA">Makes</div>
-            <div className="answer answerB">Publishes</div>
-          </div>
-        </div>
-        <div className="question-wrapper">
-          <div className="sentence-box">
-            <p>Mary _____ about what happened to Joe.</p>
-          </div>
-          <div className="answers-box">
-            <div className="answer answerA">Inquired</div>
-            <div className="answer answerB">Asked</div>
-          </div>
-        </div>
-        <div className="question-wrapper">
-          <div className="sentence-box">
-            <p>Example sentence ______.</p>
-          </div>
-          <div className="answers-box">
-            <div className="answer answerA">Correct</div>
-            <div className="answer answerB">Incorrect</div>
-          </div>
-        </div>
+        <QuestionWrapper
+          question="This is a question"
+          correct="blah"
+          incorrect="bloop"
+        />
+        <QuestionWrapper
+          question="This is a question"
+          correct="blah"
+          incorrect="bloop"
+        />
+        <QuestionWrapper
+          question="This is a question"
+          correct="blah"
+          incorrect="bloop"
+        />
+        <QuestionWrapper
+          question="This is a question"
+          correct="blah"
+          incorrect="bloop"
+        />
+        <QuestionWrapper
+          question="This is a question"
+          correct="blah"
+          incorrect="bloop"
+        />
       </div>
     </div>
   );
